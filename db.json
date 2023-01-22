@@ -1,0 +1,28 @@
+{
+  "simpsons": [
+    {
+      "id": 1,
+      "name": "Homer Jay Simpson",
+      "affiliation": "Springfield Nuclear Power Plant",
+      "image": "/assets/images/homer.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Marge",
+        "affiliation": "Housewife",
+        "image": "/assets/images/marge.jpg"
+      },
+    {
+      "id": 3,
+      "name": "Bartholomew JoJo Simpson",
+      "affiliation": "4th grade student at Springfield Elementary School",
+      "image": "/assets/images/bart.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Lisa Marie Simpson",
+      "affiliation": "2nd grade student at Springfield Elementary School",
+      "image": "/assets/images/lisa.jpg"
+    }
+  ]
+}
