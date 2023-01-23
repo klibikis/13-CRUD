@@ -4,7 +4,9 @@
 body{
   background-color: rgba(251, 239, 161, 0.327);
 }
-
+h1{
+  font-size: 30px;
+}
 
 .mb-10{
   margin-bottom: 10px;
@@ -19,8 +21,19 @@ body{
 .container{
   width: 80%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin: 5% auto;
+}
+.footer__container{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 11%;
+  border: 1px solid black;
+  padding: 20px;
+  box-shadow: 3px 3px 5px rgba(161, 161, 161, 0.643);
+  border-radius: 5px;
 }
 .cards__container{
   width: 80%;
@@ -28,6 +41,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   gap: 5%;
+  padding: 20px;
 }
 .card__image{
   width: 100%;
@@ -42,6 +56,8 @@ body{
   align-items: center;
   padding: 30px 15px;
   background-color: white;
+  box-shadow: 3px 3px 5px rgba(161, 161, 161, 0.643);
+  border-radius: 5px;
 }
 
 .button__container{
@@ -58,8 +74,23 @@ body{
   padding: 10px 30px;
 }
 .card-form-container{
-  width: 100%;
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 10px;
+}
+.label{
+  width: 100%;
+}
+.form__input{
+  width: 100%;
+}
+.button__add-new{
+  width: 100%;
+}
+
+.nav{
+  background-color: rgba(238, 238, 147, 0.631);
+  padding: 5px 0;
+  box-shadow: 3px 3px 5px rgba(161, 161, 161, 0.643);
 }

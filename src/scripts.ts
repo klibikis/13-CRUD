@@ -8,7 +8,11 @@ type Character = {
 }
 
 const characterCards = document.querySelectorAll<HTMLDivElement>(".card");
-const cardsContainer = document.querySelector<HTMLDivElement>(".cards__container")
+const cardsContainer = document.querySelector<HTMLDivElement>(".cards__container");
+const newName = document.querySelector<HTMLInputElement>(".js-form-name");
+const newAffiliation = document.querySelector<HTMLInputElement>(".js-form-affiliation");
+const newImage = document.querySelector<HTMLInputElement>(".js-form-image");
+const newSubmit = document.querySelector<HTMLInputElement>(".js-form-submit");
 let cardIdArray :number[] = [];
 
 
@@ -125,4 +129,17 @@ const createCards = () =>{
 
 // DISPLAYING ALL CARDS
 createCards();
+newSubmit.addEventListener("click", () => {
+    let value = "";
+    if(newImage.value){
+        value = newImage.value
+    }else{
+        value = "/assets/images/bart.jpg"
+    }
+    axios.post<Character>("http://localhost:3004/simpsons", {
+        name: newName.value,
+        affiliation: newAffiliation.value,
+        image: value
+    })
+})
 

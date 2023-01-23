@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <section>
+    <section class = "nav">
         <div class="container">
             <h1>CRUD - The Simpsons Edition</h1>
         </div>
@@ -21,14 +21,24 @@
         </div>
     </section>
     <section>
-        <div class="container mb-30">
-            <h1>Add New Character</h1>
-            <form>
-                <label>
-                    dada
-                    <input type = "text">
+        <div class="footer__container mb-30">
+            <h1 class = "mb-30">Add New Character</h1>
+            <form class = "card-form-container">
+                <label class = "label">
+                    Character name<br>
+                    <input type = "text" placeholder="Name" class = "form__input js-form-name">
                 </label>
-                
+                <label>
+                    Character affiliation<br>
+                    <textarea placeholder="Affiliation" class = "form__input js-form-affiliation"></textarea>
+                </label>
+                <label class = "label mb-10">
+                    Image URL<br>
+                    <input type = "text" placeholder="Image URL (ratio 1:1)" class = "form__input js-form-image">
+                </label>
+                <button class = "button button__add-new js-form-submit">
+                    SUBMIT
+                </button>
             </form>
         </div>
     </section>

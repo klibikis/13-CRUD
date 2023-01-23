@@ -7,11 +7,11 @@
       "image": "/assets/images/homer.jpg"
     },
     {
-        "id": 2,
-        "name": "Marge",
-        "affiliation": "Housewife",
-        "image": "/assets/images/marge.jpg"
-      },
+      "id": 2,
+      "name": "Marge",
+      "affiliation": "Housewife",
+      "image": "/assets/images/marge.jpg"
+    },
     {
       "id": 3,
       "name": "Bartholomew JoJo Simpson",
